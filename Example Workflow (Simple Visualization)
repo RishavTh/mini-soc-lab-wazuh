@@ -1,0 +1,9 @@
+[1] Attacker runs: PowerShell with malicious command
+      ↓
+[2] Sysmon logs: "New PowerShell process with download string"
+      ↓
+[3] Wazuh Agent: Reads the Sysmon log
+      ↓
+[4] Wazuh Server: Matches log against rules (e.g., suspicious PowerShell behavior)
+      ↓
+[5] You get an alert: 🚨 Malicious activity detected on Windows 10!
